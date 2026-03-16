@@ -3,5 +3,33 @@
 @tailwind utilities;
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prose table styling for markdown */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.prose th, .prose td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(75, 85, 99, 0.4);
+  text-align: left;
+}
+
+.prose th {
+  background: rgba(55, 65, 81, 0.3);
+  font-weight: 600;
+}
+
+.prose tr:hover td {
+  background: rgba(55, 65, 81, 0.15);
+}
+
+/* Smooth selection */
+::selection {
+  background: rgba(99, 102, 241, 0.3);
 }
